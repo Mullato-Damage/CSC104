@@ -1,0 +1,61 @@
+body {
+    font-family: 'Georgia', serif; /*font changed to a more formal look */
+    line-height: 1.5;
+    font-size: 18px;
+    color: #333333; /* Dark gray for primary text */
+    background-color: #fdf1d4; /* Light beige background for the old-timey parchment feel */
+    margin: 0; /* white space or border around the body */
+    padding: 20px; /* White space within the body or the opposite of margin */ 
+}
+
+/* My first idea when designing the page was to give it a red white and blue. I originally used the green background, but soon moved away because changing the green to red and blue didn't help. Instead I used the text to convey the red white and blue. */
+/* Main Heading/ Title */
+h1 {
+    font-size: 36px;
+    text-align: center; /* The title is placed in the Center, positioned in an important place. */ 
+    font-weight: bold; /* Along with the placement, the word is also bold, so it pops more to the user.*/
+    text-transform: uppercase; /* All letters within H1 are uppercase, no matter how the user types it. */
+    color: #003366; /* Deep navy blue for main headings */
+    margin-bottom: 20px; /* Space provided under the Main Heading */
+    text-decoration: underline; /* Underlines the text, unlike the other headings which don't have their line attached */
+}
+
+/* Subheadings/ Article */
+h2 {
+    font-size: 28px;
+    font-weight: bold; /* Headings needs to be bold */
+    text-align: center; /* Center the paragraph text */
+    margin-top: 10px; /* Space provided above the Subheading */
+    margin-bottom: 20px; /* Space provided below the Subheading */
+    border-bottom: 2px solid #cccccc; /* Light gray underline */
+    padding-bottom: 10px; /* Space between the Subheading and the line/border, typically used for spacing between lines of words */
+    color: #660000; /* Deep maroon for subheadings, differentiates from the smaller headings and tells the user where to start. */
+}
+
+/* Smaller Headings/ Sections */
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center; /* Center the headings to align with the other headings */ 
+    margin-top: 60px; /* Space provided above the smaller headings so that the text isn't bunched together and too cluttered for the user to read. */
+    margin-bottom: 10px; /* Space provided below the smaller headings, which isn't a lot, since I want the text close to their respective subheadings */ 
+    border-bottom: 2px solid #cccccc; /* Light gray underline */
+    /* The next three lines are dedicated to the underlines, which I wanted under the sections, but not as long as the one under the article because it's smaller in importance. 
+    Due to it not being text, I needed to use the margin settings for the right and left to keep it center, because without them or a single one of them, the Section/smaller heading and the underline will be against either side of the screen, depending on which direction is missing. */ 
+    width: 25%; /* Set a specific width for the underline */
+    margin-left: auto; /* Center the underline */
+    margin-right: auto; /* Center the underline */
+    color: #003366; /* Same navy blue for smaller headings */
+}
+
+/* Paragraph Styling */
+p {
+    text-align: center; /* Centered the paragraph text, for a more formal, and (what I believe to be) a more structured look */ 
+    margin-top: 10px; /* Reduce space between heading and paragraph */
+    margin-bottom: 50px; /* Keep some space below the paragraph */
+}
+
+/* Link Styling */
+a:visited{
+	color: aqua; /* color of link */
+}
