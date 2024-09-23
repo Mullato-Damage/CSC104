@@ -1,7 +1,10 @@
 # CSC104
 Constitution Assignment:
+
 Constitution.html
+
 Stylized_Constitution.css
+
 Overview
 CSS Basics: Text Styling: US Constitution
 Use text that is not covered by copyright, for example, the link (below) to the Constitution, and style it using CSS.
