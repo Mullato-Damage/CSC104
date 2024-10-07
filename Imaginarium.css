@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    background-color: #282c34;
+    color: rgb(0, 26, 255);
+    width: 100%;
+    box-sizing: border-box;
+    position: relative; /* Relative positioning for absolute child */
+}
+
+#business-name {
+    font-size: 24px;
+    padding: 10px; /* Reduced padding to align with search bar */
+    border: 2px solid rgb(206, 0, 0);
+    background-color: #3c4043;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-decoration: none; /* Remove underline for the link */
+    color: rgb(0, 26, 255); /* Ensure text color matches */
+}
+
+#business-name a {
+    color: rgb(0, 26, 255); /* Original color for unvisited links */
+    text-decoration: none; /* Remove underline */
+}
+
+#business-name a:visited {
+    color: rgb(0, 26, 255); /* Keep the same color for visited links */
+}
+
+#search-bar {
+    padding: 8px;
+    width: 500px;
+    margin: 10px auto;
+    border: 2px solid rgb(206, 0, 0);
+    border-radius: 5px;
+}
+
+/* New CSS for the header links */
+.header-links {
+    position: absolute; /* Position absolute to the header */
+    right: 20px; /* Space from the right edge */
+    top: 10px; /* Space from the top */
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+}
+
+.header-links a {
+    color: rgb(0, 26, 255); /* Color for the links */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Padding for links */
+    font-size: 18px; /* Font size for links */
+    border: 2px solid rgb(206, 0, 0); /* Red border for each link */
+    border-radius: 5px; /* Rounded corners for the border */
+    margin-bottom: 5px; /* Space between links */
+}
+
+.header-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Background on hover */
+}
+
+nav {
+    background-color: #4CAF50;
+    padding: 10px;
+    width: 220px;
+    position: fixed; /* Fixed position for constant visibility */
+    top: 127px;
+    left: 0;
+    height: calc(100vh - 147px); /* Adjust to fill the remaining height */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space the items evenly */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Allows nav items to grow and fill the vertical space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Space items evenly */
+}
+
+nav ul li {
+    margin: 0; /* Remove margin to control vertical space via padding */
+}
+
+nav ul li a {
+    color: rgb(255, 195, 11);
+    text-decoration: none;
+    display: block;
+    padding: 15px 10px; /* Increase padding for a larger clickable area */
+    font-size: 25px; /* Increase the font size for better readability */
+    text-align: center; /* Center the text inside each nav item */
+}
+
+nav ul li a:hover {
+    background-color: #3e8e41; /* Hover effect remains */
+}
+
+main {
+    position: relative; /* Ensure the text can be positioned over the image */
+    width: calc(100% - 240px); /* Adjust width, ensuring it doesn't collide with nav */
+    margin-left: 240px; /* Space for nav */
+    height: calc(100vh - 127px); /* Full height minus the header */
+    background-image: url('Imaginarium.jpg'); /* Set the image as the background */
+    background-size: cover; /* Ensure the image covers the entire main area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+    display: flex;
+    flex-direction: column; /* Allow vertical stacking of content */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    color: white; /* Change text color to contrast with the image */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for readability */
+}
+
+main h1, main p {
+    position: relative; /* Keep text flow normal */
+    z-index: 1; /* Ensure text appears above the background image */
+    margin: 0; /* Remove extra margins */
+    padding: 10px;
+    text-align: center; /* Center the text */
+}
+
+main h1 {
+    font-size: 3em; /* Increase heading size */
+    margin-bottom: 10px; /* Add space between h1 and p */
+}
+
+main p {
+    font-size: 1.5em; /* Increase paragraph size */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Let it resize automatically */
+        position: relative; /* Stack nav above main */
+    }
+
+    main {
+        margin-left: 0; /* Reset margin for full width */
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    #search-bar {
+        width: 90%; /* Adjust search bar width for smaller screens */
+    }
+}
+
+/* Additional Hover Effects */
+main h1:hover, main p:hover {
+    opacity: 0.9; /* Slightly transparent on hover */
+}
