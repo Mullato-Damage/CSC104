@@ -1,64 +1,86 @@
-// Expanded arrays with more sample data
-const names = {
-    male: ["Kai Nakamura", "Xavier Lee", "Elijah Brown", "Noah Miller", "Mateo Chen"],
-    female: ["Lian Zhang", "Sophia Garcia", "Amara Patel", "Evelyn Hunter", "Harper Liu"],
-    neutral: ["Alex Jordan", "Taylor Morgan", "Jordan Quinn", "Casey Avery", "Drew Blake"]
-};
+// Sample data for generating names, characters, themes, genres, and settings
+const maleNames = ["John", "Michael", "David", "James", "Robert"];
+const femaleNames = ["Sarah", "Emma", "Olivia", "Sophia", "Emily"];
+const neutralNames = ["Taylor", "Jordan", "Riley", "Casey", "Morgan"];
+const characterTraits = ["Brave", "Cunning", "Kind", "Ambitious", "Lazy"];
+const themes = ["Redemption", "Betrayal", "Love", "Courage", "Loss"];
+const genres = ["Fantasy", "Science Fiction", "Mystery", "Romance", "Thriller"];
+const settings = ["Post-apocalyptic city", "Medieval village", "Distant planet", "Modern metropolis", "Haunted house"];
 
-const traits = ["Brave and headstrong", "Quiet and analytical", "Reckless but charming", "Curious and adventurous", "Stoic with a soft heart", "Ambitious and cunning", "Kind-hearted but naive"];
-const themes = ["Redemption", "Betrayal", "Courage vs Fear", "Friendship", "Identity", "Power and Corruption", "Love and Sacrifice", "Survival"];
-const genres = ["Science Fiction", "Fantasy", "Romance", "Horror", "Mystery", "Historical Fiction", "Thriller", "Drama"];
-const settings = ["A bustling futuristic city", "A small village in the mountains", "A haunted mansion", "A medieval kingdom", "A post-apocalyptic wasteland", "A quiet seaside town", "A distant planet", "An underground bunker"];
-
-// Function to generate names with filter by gender
+// Function to generate a random name based on selected gender
 function generateName() {
     const gender = document.getElementById("name-gender").value;
-    const nameList = names[gender]; // Access the selected gender category
-    const randomIndex = Math.floor(Math.random() * nameList.length);
-    document.getElementById("name-output").innerText = `Character Name: ${nameList[randomIndex]}`;
+    let name = "";
+
+    // Choose a random name based on gender selection
+    if (gender === "male") {
+        name = maleNames[Math.floor(Math.random() * maleNames.length)];
+    } else if (gender === "female") {
+        name = femaleNames[Math.floor(Math.random() * femaleNames.length)];
+    } else {
+        name = neutralNames[Math.floor(Math.random() * neutralNames.length)];
+    }
+
+    // Display the generated name
+    document.getElementById("name-output").textContent = name;
 }
 
-// Function to add a custom name to the name list
+// Function to add a custom name to the list
 function addCustomName() {
     const customName = document.getElementById("custom-name").value;
     const gender = document.getElementById("custom-name-gender").value;
-    if (customName) {
-        names[gender].push(customName);
-        document.getElementById("custom-name-output").innerText = `Added custom name: ${customName} to the ${gender} list.`;
-        document.getElementById("custom-name").value = ''; // Clear input
+
+    // Add the custom name to the respective name list
+    if (gender === "male") {
+        maleNames.push(customName);
+    } else if (gender === "female") {
+        femaleNames.push(customName);
+    } else {
+        neutralNames.push(customName);
     }
+
+    // Display confirmation message
+    document.getElementById("custom-name-output").textContent = `Added custom name: ${customName}`;
 }
 
 // Function to generate random character traits
 function generateCharacter() {
-    const randomIndex = Math.floor(Math.random() * traits.length);
-    document.getElementById("character-output").innerText = `Character Traits: ${traits[randomIndex]}`;
+    const trait = characterTraits[Math.floor(Math.random() * characterTraits.length)];
+    
+    // Display the generated character trait
+    document.getElementById("character-output").textContent = `Character trait: ${trait}`;
 }
 
-// Function to generate random themes
+// Function to generate a random theme
 function generateTheme() {
-    const randomIndex = Math.floor(Math.random() * themes.length);
-    document.getElementById("theme-output").innerText = `Story Theme: ${themes[randomIndex]}`;
+    const theme = themes[Math.floor(Math.random() * themes.length)];
+    
+    // Display the generated theme
+    document.getElementById("theme-output").textContent = `Theme: ${theme}`;
 }
 
-// Function to generate random genres
+// Function to generate a random genre
 function generateGenre() {
-    const randomIndex = Math.floor(Math.random() * genres.length);
-    document.getElementById("genre-output").innerText = `Story Genre: ${genres[randomIndex]}`;
+    const genre = genres[Math.floor(Math.random() * genres.length)];
+    
+    // Display the generated genre
+    document.getElementById("genre-output").textContent = `Genre: ${genre}`;
 }
 
-// Function to generate random settings
+// Function to generate a random setting
 function generateSetting() {
-    const randomIndex = Math.floor(Math.random() * settings.length);
-    document.getElementById("setting-output").innerText = `Story Setting: ${settings[randomIndex]}`;
+    const setting = settings[Math.floor(Math.random() * settings.length)];
+    
+    // Display the generated setting
+    document.getElementById("setting-output").textContent = `Setting: ${setting}`;
 }
 
-// Function to clear generated content
+// Function to clear all results
 function clearResults() {
-    document.getElementById("name-output").innerText = '';
-    document.getElementById("character-output").innerText = '';
-    document.getElementById("theme-output").innerText = '';
-    document.getElementById("genre-output").innerText = '';
-    document.getElementById("setting-output").innerText = '';
-    document.getElementById("custom-name-output").innerText = '';
+    document.getElementById("name-output").textContent = "";
+    document.getElementById("custom-name-output").textContent = "";
+    document.getElementById("character-output").textContent = "";
+    document.getElementById("theme-output").textContent = "";
+    document.getElementById("genre-output").textContent = "";
+    document.getElementById("setting-output").textContent = "";
 }

@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Story Writer's Toolbox</title>
+    
+    <!-- Link to External CSS File -->
     <link rel="stylesheet" href="GPT_Writing.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
         <h1>Story Writer's Toolbox</h1>
         <p>Your go-to tool for creating unforgettable stories!</p>
     </header>
 
+    <!-- Navigation Bar -->
     <nav>
         <ul>
+            <!-- Links to each section of the page -->
             <li><a href="#name-generator">Name Generator</a></li>
             <li><a href="#character-builder">Character Builder</a></li>
             <li><a href="#theme-finder">Theme Finder</a></li>
@@ -22,28 +29,42 @@
         </ul>
     </nav>
 
+    <!-- Main Content -->
     <main>
         <!-- Name Generator Section -->
         <section id="name-generator">
             <h2>Name Generator</h2>
             <p>Select a gender for your character's name:</p>
+
+            <!-- Dropdown for gender selection -->
             <select id="name-gender">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="neutral">Neutral</option>
             </select>
+
+            <!-- Button to trigger name generation -->
             <button onclick="generateName()">Generate Name</button>
+
+            <!-- Output area for the generated name -->
             <p id="name-output" class="generated-box"></p>
 
+            <!-- Custom Name Input Section -->
             <h3>Add a Custom Name</h3>
             <p>Add your own name to the list:</p>
+            
+            <!-- Input field and dropdown for custom name addition -->
             <input type="text" id="custom-name" placeholder="Enter custom name">
             <select id="custom-name-gender">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="neutral">Neutral</option>
             </select>
+
+            <!-- Button to add custom name to the list -->
             <button onclick="addCustomName()">Add Name</button>
+
+            <!-- Output for custom name confirmation -->
             <p id="custom-name-output" class="generated-box"></p>
         </section>
 
@@ -51,7 +72,11 @@
         <section id="character-builder">
             <h2>Character Builder</h2>
             <p>Define key characteristics like personality, goals, and backstory for your characters.</p>
+
+            <!-- Button to generate random character traits -->
             <button onclick="generateCharacter()">Generate Character Traits</button>
+
+            <!-- Output area for generated character traits -->
             <p id="character-output" class="generated-box"></p>
         </section>
 
@@ -59,7 +84,11 @@
         <section id="theme-finder">
             <h2>Theme Finder</h2>
             <p>Explore themes that can shape the core message of your story.</p>
+
+            <!-- Button to find a random theme -->
             <button onclick="generateTheme()">Find a Theme</button>
+
+            <!-- Output area for generated theme -->
             <p id="theme-output" class="generated-box"></p>
         </section>
 
@@ -67,7 +96,11 @@
         <section id="genre-explorer">
             <h2>Genre Explorer</h2>
             <p>Not sure what genre your story belongs to? Browse through popular genres for inspiration.</p>
+
+            <!-- Button to generate a random genre -->
             <button onclick="generateGenre()">Explore Genres</button>
+
+            <!-- Output area for generated genre -->
             <p id="genre-output" class="generated-box"></p>
         </section>
 
@@ -75,18 +108,24 @@
         <section id="setting-creator">
             <h2>Setting Creator</h2>
             <p>Create unique settings for your story, from fantastical worlds to gritty urban environments.</p>
+
+            <!-- Button to generate a random setting -->
             <button onclick="generateSetting()">Generate Setting</button>
+
+            <!-- Output area for generated setting -->
             <p id="setting-output" class="generated-box"></p>
         </section>
 
-        <!-- Clear Results Button -->
+        <!-- Button to clear all generated results -->
         <button id="clear-results" onclick="clearResults()">Clear Results</button>
     </main>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Story Writer's Toolbox. All rights reserved.</p>
     </footer>
 
+    <!-- Link to External JavaScript File -->
     <script src="GPT_Writing.js"></script>
 </body>
 </html>
