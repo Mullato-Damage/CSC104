@@ -11,6 +11,7 @@ body {
     color: #333;
 }
 
+/* Header Styling */
 header {
     background-color: #333;
     color: white;
@@ -22,6 +23,7 @@ header h1 {
     margin-bottom: 10px;
 }
 
+/* Navigation Bar */
 nav {
     background-color: #444;
     text-align: center;
@@ -47,6 +49,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Main Sections Styling */
 main {
     padding: 20px;
     max-width: 1200px;
@@ -59,27 +62,92 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    /* Center align content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-section h2 {
-    color: #333;
-    margin-bottom: 10px;
+/* Name Generator Section Customization */
+#name-generator, #character-builder, #theme-finder, #genre-explorer, #setting-creator {
+    background-color: #e6f7ff;
+    border: 2px solid #007bff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
+h2 {
+    color: #0056b3;
+    text-align: center;
+}
+
+/* Center text inside sections */
+section p {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+section button {
+    margin-bottom: 20px;
+}
+
+/* Answer/Generated content boxes */
+.generated-box {
+    background-color: #f0f8ff;
+    border: 1px solid #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    color: #0056b3;
+    width: 80%;  /* Limit width for centered content */
+    text-align: center;
+}
+
+/* Button Customization */
 button {
-    background-color: #28a745;
+    background-color: #007bff;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 80%; /* Center the button by limiting width */
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #0056b3;
 }
 
+/* Input Fields Customization */
+input[type="text"], select {
+    padding: 8px;
+    margin: 10px 0;
+    width: 80%;  /* Center input fields by limiting width */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Custom Clear Button */
+button#clear-results {
+    background-color: #dc3545;
+    margin-top: 20px;
+}
+
+button#clear-results:hover {
+    background-color: #c82333;
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
