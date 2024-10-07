@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writer's Tool</title>
+  <link rel="stylesheet" href="Bard_Writing.css">
+</head>
+<body>
+  <header>
+    <h1>Writer's Tool</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#characters">Characters</a></li>
+      <li><a href="#themes">Themes</a></li>
+      <li><a href="#genres">Genres</a></li>
+      <li><a href="#settings">Settings</a></li>
+      <li><a href="#character-traits">Character Traits</a></li>
+      <li><a href="#plot-twists">Plot Twists</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="characters">
+      <h2>Character Generator</h2>
+      <form id="character-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <button type="submit">Generate</button>
+      </form>
+      <p id="character-results"></p>
+    </section>
+    <section id="themes">
+      <h2>Theme Generator</h2>
+      <form id="theme-form">
+        <label for="theme-keywords">Keywords:</label>
+        <input type="text" id="theme-keywords">
+        <button type="submit">Generate</button>
+      </form>
+      <p id="theme-results"></p>
+    </section>
+    <section id="genres">
+        <h2>Genre Generator</h2>
+        <form id="genre-form">
+          <label for="genre-keywords">Keywords:</label>
+          <input type="text" id="genre-keywords">
+          <button type="submit">Generate</button>
+        </form>
+        <p id="genre-result"></p>
+    </section>
+    <section id="settings">
+      <h2>Setting Generator</h2>
+      <form id="setting-form">
+        <label for="time-period">Time Period:</label>
+        <input type="text" id="time-period">
+        <label for="location">Location:</label>
+        <input type="text" id="location">
+        <button type="submit">Generate</button>
+      </form>
+      <p id="setting-results"></p>
+    </section>
+    <section id="character-traits">
+      <h2>Character Trait Generator</h2>
+      <form id="trait-form">
+        <label for="personality-type">Personality Type:</label>
+        <input type="text" id="personality-type">
+        <button type="submit">Generate</button>
+      </form>
+      <p id="trait-results"></p>
+    </section>
+    <section id="plot-twists">
+        <h2>Plot Twist Generator</h2>
+        <form id="twist-form">
+          <label for="twist-keywords">Keywords:</label>
+          <input type="text" id="twist-keywords">
+          <button type="submit">Generate</button>
+        </form>
+        <p id="twist-result"></p>
+      </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Writer's Tool</p>
+  </footer>
+  <script src="Bard_Writing.js"></script>
+</body>
+</html>

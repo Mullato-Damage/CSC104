@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Writer's Toolbox</title>
+    <link rel="stylesheet" href="GPT_Writing.css">
+</head>
+<body>
+    <header>
+        <h1>Story Writer's Toolbox</h1>
+        <p>Your go-to tool for creating unforgettable stories!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#name-generator">Name Generator</a></li>
+            <li><a href="#character-builder">Character Builder</a></li>
+            <li><a href="#theme-finder">Theme Finder</a></li>
+            <li><a href="#genre-explorer">Genre Explorer</a></li>
+            <li><a href="#setting-creator">Setting Creator</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="name-generator">
+            <h2>Name Generator</h2>
+            <p>Need a name for your character? Get inspired by our random name generator.</p>
+            <button onclick="generateName()">Generate Name</button>
+            <p id="name-output"></p>
+        </section>
+
+        <section id="character-builder">
+            <h2>Character Builder</h2>
+            <p>Define key characteristics like personality, goals, and backstory for your characters.</p>
+            <button onclick="generateCharacter()">Generate Character Traits</button>
+            <p id="character-output"></p>
+        </section>
+
+        <section id="theme-finder">
+            <h2>Theme Finder</h2>
+            <p>Explore themes that can shape the core message of your story.</p>
+            <button onclick="generateTheme()">Find a Theme</button>
+            <p id="theme-output"></p>
+        </section>
+
+        <section id="genre-explorer">
+            <h2>Genre Explorer</h2>
+            <p>Not sure what genre your story belongs to? Browse through popular genres for inspiration.</p>
+            <button onclick="generateGenre()">Explore Genres</button>
+            <p id="genre-output"></p>
+        </section>
+
+        <section id="setting-creator">
+            <h2>Setting Creator</h2>
+            <p>Create unique settings for your story, from fantastical worlds to gritty urban environments.</p>
+            <button onclick="generateSetting()">Generate Setting</button>
+            <p id="setting-output"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Story Writer's Toolbox. All rights reserved.</p>
+    </footer>
+
+    <script src="GPT_Writing.js"></script>
+</body>
+</html>
