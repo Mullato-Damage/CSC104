@@ -1,0 +1,4 @@
+Elementus is the main page of the website where everyone will start. It has a background and links to the other pages. Imaginarium is the CSS for the main page.
+Character is linked to the main pagem through the characters link, and shows a list of characters that I've created, with the first being Jaded, who has a link, and the second is Trojan, who doesn't have a page yet. Charactershas there own background image and CSS
+Characters 1 is the first character you'll see on the lists, which leads users to the chracters individual page, representing their bio. The chracter is currently Jaded, and there is a n image representing them. Character 1 also has their own CSS.
+All CSS follow similar style, with only a few changes, depending on the information and images being presented.
