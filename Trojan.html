@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Defines the language of the document as English -->
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile devices -->
+    <title>Trojan</title> <!-- Title of the web page displayed in the browser tab -->
+    <link rel="stylesheet" href="Characters.css"> <!-- Link to the shared CSS file for styling -->
+    <style>
+        body {
+            background-image: url('Characters.jpg'); /* Set background image for the body */
+            background-size: cover; /* Cover the entire body with the background image */
+            background-position: center; /* Center the background image */
+        }
+        
+        /* Trojan-specific styles */
+        .content-box {
+            border: 2px solid #FFD700; /* Gold border for Trojan's content box */
+        }
+        
+        main h1 {
+            color: #FF4500; /* Red color for Trojan's heading */
+        }
+
+        main p {
+            color: #FF4500 !important; /* Red color for the text, with !important to override other styles */
+        }
+
+        .tech-gallery {
+            border-top: 2px solid #FFD700; /* Gold top border for separation */
+            margin-top: 20px; /* Margin to space the gallery from the above content */
+            padding-top: 20px; /* Padding for better visual spacing */
+        }
+
+        .tech-gallery h2 {
+            color: #FFD700; /* Gold color for the Tech Gallery heading */
+            text-align: center; /* Center the heading */
+        }
+
+        .gallery {
+            display: flex; /* Use flexbox layout for gallery items */
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: center; /* Center the gallery items */
+        }
+
+        .gallery-item {
+            margin: 15px; /* Margin around each gallery item */
+            text-align: center; /* Center the titles under the images/videos */
+        }
+
+        .gallery-item img,
+        .gallery-item video {
+            width: 300px; /* Set a larger size for gallery items */
+            height: auto; /* Maintain aspect ratio */
+            border: 3px solid #FF4500; /* Red border for gallery items */
+            border-radius: 8px; /* Rounded corners for images/videos */
+        }
+
+        .gallery-item-title {
+            margin-top: 10px; /* Space between the item and its title */
+            color: #FFD700; /* Gold color for the titles */
+            font-weight: bold; /* Make the titles bold */
+        }
+
+        .gallery-item-title a {
+            color: #FFD700; /* Ensure the link retains the gold color */
+            text-decoration: none; /* No underline for the link by default */
+        }
+
+        .gallery-item-title a:hover {
+            text-decoration: underline; /* Add underline on hover for better interactivity */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="Elementus.html" id="business-name">Elementus Imaginarium</a> <!-- Link to the main page -->
+        <input type="text" id="search-bar" placeholder="Search..."> <!-- Search bar for user input -->
+        <div class="header-links"> <!-- Container for header navigation links -->
+            <a href="#">Shop</a> <!-- Placeholder link for Shop -->
+            <a href="contact.html">Contact</a> <!-- Link to the contact page -->
+            <a href="#">Socials</a> <!-- Placeholder link for Socials -->
+        </div>
+    </header>
+
+    <nav>
+        <ul> <!-- Unordered list for navigation links -->
+            <li><a href="Elementus.html">Home</a></li> <!-- Link to Home page -->
+            <li><a href="Characters.html">Characters</a></li> <!-- Link to Characters page -->
+            <li><a href="Tech.html">Tech</a></li> <!-- Link to Tech page -->
+            <li><a href="#">Trivia</a></li> <!-- Placeholder link for Trivia -->
+            <li><a href="#">Comics</a></li> <!-- Placeholder link for Comics -->
+            <li><a href="#">Novels</a></li> <!-- Placeholder link for Novels -->
+            <li><a href="#">Series</a></li> <!-- Placeholder link for Series -->
+            <li><a href="#">Movies</a></li> <!-- Placeholder link for Movies -->
+            <li><a href="#">Shows</a></li> <!-- Placeholder link for Shows -->
+            <li><a href="#">Author</a></li> <!-- Placeholder link for Author -->
+        </ul>
+    </nav>
+
+    <div class="content-box"> <!-- Container for Trojan's character information and tech gallery -->
+        <main>
+            <h1>Trojan</h1> <!-- Main heading for the character's name -->
+            <div class="character-info"> <!-- Container for character image and description -->
+                <img src="Trojan.jpg" alt="Trojan Image (coming soon)" class="character-image"> <!-- Image of the character -->
+                <p>Garrett Shaw, peaked in high school, as a jock. <!-- Description of the character's background -->
+                    He bullied others, like Jaded's God-sister, Maya. 
+                    He only cares about himself, which ended up causing his demise. 
+                    He wields a spear and shield and has superhuman strength and durability.
+                </p>
+            </div>
+        </main>
+        
+        <div class="tech-gallery"> <!-- Section for displaying Trojan's tech gallery -->
+            <h2>Tech Gallery</h2> <!-- Heading for the Tech Gallery -->
+            <div class="gallery"> <!-- Container for the gallery items -->
+                <div class="gallery-item"> <!-- First gallery item -->
+                    <a href="Trojan Shield.gif" target="_blank"> <!-- Link to Trojan Shield GIF -->
+                        <img src="Trojan Shield.gif" alt="Trojan Shield GIF"> <!-- Image for the GIF -->
+                    </a>
+                    <div class="gallery-item-title"> <!-- Title for the first gallery item -->
+                        <a href="Tech.html">Trojan Shield (GIF)</a> <!-- Link to Tech page -->
+                    </div>
+                </div>
+                <div class="gallery-item"> <!-- Second gallery item -->
+                    <a href="Trojan Spear Heads.png" target="_blank"> <!-- Link to Trojan Spear Heads image -->
+                        <img src="Trojan Spear Heads.png" alt="Trojan Spear Heads Image"> <!-- Image for the Spear Heads -->
+                    </a>
+                    <div class="gallery-item-title"> <!-- Title for the second gallery item -->
+                        <a href="Tech.html">Trojan Spear Heads</a> <!-- Link to Tech page -->
+                    </div>
+                </div>
+                <div class="gallery-item"> <!-- Third gallery item -->
+                    <a href="Trojan_Shield.mp4" target="_blank"> <!-- Link to Trojan Shield video -->
+                        <video src="Trojan_Shield.mp4" alt="Trojan Shield Video" controls></video> <!-- Video of Trojan Shield -->
+                    </a>
+                    <div class="gallery-item-title"> <!-- Title for the third gallery item -->
+                        <a href="Tech.html">Trojan Shield (Video)</a> <!-- Link to Tech page -->
+                    </div>
+                </div>
+                <!-- Add more gallery items as needed -->
+            </div>
+        </div>
+    </div> <!-- End of content-box -->
+</body>
+</html>

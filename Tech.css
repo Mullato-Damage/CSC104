@@ -1,0 +1,200 @@
+/* Basic Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Font family for text */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    color: #ffffff; /* Text color for readability against background */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    background-image: url('Tech.jpg'); /* Set background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+}
+
+/* Header Styles */
+header {
+    display: flex; /* Use flexbox for header layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 5px; /* Padding inside the header */
+    background-color: #282c34; /* Background color for header */
+    color: rgb(0, 26, 255); /* Text color for header */
+    width: 100%; /* Full width header */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+/* Business Name Styling */
+#business-name {
+    font-size: 24px; /* Font size for business name */
+    padding: 10px; /* Padding around the business name */
+    border: 2px solid rgb(206, 0, 0); /* Border around the business name */
+    background-color: #3c4043; /* Background color for business name */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Margin below the business name */
+    text-decoration: none; /* Remove underline from link */
+    color: rgb(0, 26, 255); /* Color for the business name */
+}
+
+/* Search Bar Styling */
+#search-bar {
+    padding: 8px; /* Padding inside the search bar */
+    width: 500px; /* Fixed width for the search bar */
+    margin: 10px auto; /* Center the search bar */
+    border: 2px solid rgb(206, 0, 0); /* Border around the search bar */
+    border-radius: 5px; /* Rounded corners for the search bar */
+}
+
+/* Header Links Styles */
+.header-links {
+    position: absolute; /* Positioning for the header links */
+    right: 20px; /* Align to the right */
+    top: 5px; /* Align to the top */
+    display: flex; /* Flexbox layout for header links */
+    flex-direction: column; /* Stack links vertically */
+}
+
+/* Header Link Styles */
+.header-links a {
+    color: rgb(0, 26, 255); /* Color for header links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px 10px; /* Padding for links */
+    font-size: 18px; /* Font size for links */
+    border: 2px solid rgb(206, 0, 0); /* Border around links */
+    border-radius: 5px; /* Rounded corners for links */
+    margin-bottom: 5px; /* Margin below links */
+}
+
+/* Header Link Hover Effects */
+.header-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Background color change on hover */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #4CAF50; /* Background color for nav */
+    padding: 10px; /* Padding inside nav */
+    width: 220px; /* Fixed width for nav */
+    position: fixed; /* Fixed position for nav */
+    top: 127px; /* Distance from the top */
+    left: 0; /* Align to the left */
+    height: calc(100vh - 147px); /* Height of nav minus header */
+    display: flex; /* Flexbox for nav layout */
+    flex-direction: column; /* Stack nav items vertically */
+    justify-content: space-between; /* Space items evenly */
+}
+
+/* Navigation List Styles */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    flex-grow: 1; /* Allow nav to grow */
+    display: flex; /* Flexbox for nav items */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-evenly; /* Evenly space items */
+}
+
+/* Navigation Item Styles */
+nav ul li {
+    margin: 0; /* Reset margin for nav items */
+}
+
+/* Navigation Link Styles */
+nav ul li a {
+    color: rgb(255, 195, 11); /* Original color for navigation links */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Block-level link for full clickable area */
+    padding: 15px 10px; /* Padding for links */
+    font-size: 25px; /* Font size for links */
+    text-align: center; /* Center text in links */
+    border: 2px solid rgb(255, 195, 11); /* Border around links */
+    border-radius: 8px; /* Rounded corners for links */
+    margin-bottom: 10px; /* Margin below links */
+}
+
+/* Navigation Link Hover Effects */
+nav ul li a:hover {
+    background-color: #3e8e41; /* Hover effect for navigation links */
+}
+
+/* Additional Hover Effects for Main Headings and Paragraphs */
+main h1:hover, main p:hover {
+    opacity: 0.9; /* Slightly transparent on hover for visual feedback */
+}
+
+/* Visited Link Styles */
+nav ul li a:visited {
+    color: rgb(255, 195, 11); /* Set the visited link color to match original */
+}
+
+a:visited {
+    color: rgb(0, 26, 255); /* Ensure all links are blue when visited */
+}
+
+/* Content Box Styles */
+.content-box {
+    border: 2px solid #00A36C; /* Border similar to Characters page */
+    padding: 50px; /* Reduced padding for better width */
+    border-radius: 10px; /* Rounded corners for content box */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    max-width: calc(100% - 240px); /* Full width minus nav */
+    margin: 100px auto; /* Center the box horizontally */
+}
+
+/* Main Content Styles */
+main {
+    width: calc(100% - 240px); /* Total width minus nav */
+    margin-left: 240px; /* Align with nav */
+    padding: 20px; /* Padding within the main area */
+    color: rgb(0, 26, 255); /* Text color for main content */
+    text-align: center; /* Center the content in each item */
+}
+
+/* Main Heading Styles */
+main h1 {
+    font-size: 3em; /* Font size for main heading */
+    margin-bottom: 20px; /* Margin below heading */
+    text-align: center; /* Center the text */
+    text-decoration: underline; /* Underline the text */
+}
+
+/* Gallery Styles */
+.gallery {
+    display: grid; /* Use grid layout for the gallery */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+    padding: 10px; /* Padding around the grid */
+    justify-items: center; /* Center items in the grid */
+}
+
+/* Gallery Item Styles */
+.gallery-item {
+    text-align: center; /* Center the content in each item */
+}
+
+/* Gallery Image and Video Styles */
+.gallery img,
+.gallery video {
+    max-width: 100%; /* Ensure images/videos fit within their container */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #00A36C; /* Optional: Add border around items */
+    border-radius: 10px; /* Rounded corners for images/videos */
+    width: 300px; /* Fixed width for larger items */
+    height: auto; /* Allow height to adjust */
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Let it resize automatically */
+        position: relative; /* Stack nav above main content */
+    }
+
+    main {
+        margin-left: 0; /* Reset margin for full width */
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    #search-bar {
+        width: 90%; /* Adjust search bar width for smaller screens */
+    }
+}

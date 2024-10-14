@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Characters</title>
-    <link rel="stylesheet" href="characters.css"> <!-- Link to the character-specific CSS -->
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+    <title>Characters</title> <!-- Title of the page displayed in the browser tab -->
+    <link rel="stylesheet" href="characterList.css"> <!-- Link to the character-specific CSS -->
     <link rel="stylesheet" href="Elementus.css"> <!-- Link to the common CSS for consistent styling -->
 </head>
 <body>
@@ -12,34 +12,43 @@
         <div id="business-name">
             <a href="Elementus.html">Elementus Imaginarium</a> <!-- Link to the main page -->
         </div>
-        <input type="text" id="search-bar" placeholder="Search...">
+        <input type="text" id="search-bar" placeholder="Search..."> <!-- Search bar for quick character lookup -->
         <div class="header-links">
-            <a href="shop.html">Shop</a>
-            <a href="contact.html">Contact</a>
-            <a href="socials.html">Socials</a>
+            <a href="shop.html">Shop</a> <!-- Link to the shop page -->
+            <a href="contact.html">Contact</a> <!-- Link to the contact page -->
+            <a href="socials.html">Socials</a> <!-- Link to the socials page -->
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="Elementus.html">Home</a></li>
-            <li><a href="characters.html">Characters</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="socials.html">Socials</a></li>
+            <li><a href="Characters.html">Characters</a></li> <!-- Link to the characters page -->
+            <li><a href="#">Comics</a></li> <!-- Link to the comics page -->
+            <li><a href="#">Novels</a></li> <!-- Link to the novels page -->
+            <li><a href="#">Series</a></li> <!-- Link to the series page -->
+            <li><a href="#">Movies</a></li> <!-- Link to the movies page -->
+            <li><a href="#">Shows</a></li> <!-- Link to the shows page -->
+            <li><a href="Tech.html">Tech</a></li> <!-- Link to the tech page -->
+            <li><a href="#">Trivia</a></li> <!-- Link to the trivia page -->
+            <li><a href="#">Author</a></li> <!-- Link to the author page -->
         </ul>
     </nav>
 
-    <main style="background-image: url('Characters.jpg'); background-size: cover; background-position: center;">
-        <h1>Characters</h1>
-        <p>Click on a character to learn more:</p>
+    <main style="background-image: url('Characters.jpg'); background-size: cover; background-position: center;"> <!-- Main content area with background image -->
+        <div class="content-box"> <!-- Box wrapper around the content -->
+            <h1>Characters</h1> <!-- Main heading for the characters page -->
+            <p>Click on a character to learn more:</p> <!-- Instruction for users -->
 
-        <!-- Use a flexbox for better alignment and spacing -->
-        <ul class="characters-list">
-            <li><a href="Character1.html">Jaded</a></li>
-            <li><a href="Character2.html">Trojan</a></li>
-            <li><a href="Character3.html">Character 3</a></li>
-        </ul>
-    </main>
+            <ul class="characters-list"> <!-- Unordered list for character links -->
+                <li>
+                    <a href="Jaded.html"> <!-- Link to Jaded's character page -->
+                        <img src="Jaded.jpg" alt="Jaded" class="character-image"> Jaded <!-- Character image and name -->
+                    </a>
+                </li>
+                <li><a href="Trojan.html">Trojan</a></li> <!-- Link to Trojan's character page -->
+                <li><a href="Character3.html">Coming Soon</a></li> <!-- Link to Character 3's page -->
+            </ul>
+        </div>
+    </main>    
 </body>
 </html>

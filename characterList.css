@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif; /* Set the font for the entire page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Set a light gray background color */
+}
+
+header {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 5px; /* Padding around the header */
+    background-color: #282c34; /* Dark background for the header */
+    color: rgb(0, 26, 255); /* Text color */
+    width: 100%; /* Full width of the header */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    position: relative; /* Position relative for child positioning */
+}
+
+#business-name {
+    font-size: 24px; /* Font size for the business name */
+    padding: 10px; /* Padding inside the business name box */
+    border: 2px solid rgb(206, 0, 0); /* Border around the business name */
+    background-color: #3c4043; /* Background color for the business name */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below the business name */
+    text-decoration: none; /* Remove underline from the link */
+    color: rgb(0, 26, 255); /* Color of the text */
+}
+
+#business-name a {
+    color: rgb(0, 26, 255); /* Color for the link inside business name */
+    text-decoration: none; /* Remove underline from link */
+}
+
+#business-name a:visited {
+    color: rgb(0, 26, 255); /* Keep visited link color the same */
+}
+
+#search-bar {
+    padding: 8px; /* Padding inside the search bar */
+    width: 500px; /* Width of the search bar */
+    margin: 10px auto; /* Center the search bar horizontally with margin */
+    border: 2px solid rgb(206, 0, 0); /* Border around the search bar */
+    border-radius: 5px; /* Rounded corners for the search bar */
+}
+
+.header-links {
+    position: absolute; /* Absolute positioning for flexibility */
+    right: 20px; /* Position from the right */
+    top: 5px; /* Position from the top */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack links vertically */
+}
+
+.header-links a {
+    color: rgb(0, 26, 255); /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px 10px; /* Padding for link items */
+    font-size: 18px; /* Font size for link items */
+    border: 2px solid rgb(206, 0, 0); /* Border around link items */
+    border-radius: 5px; /* Rounded corners for link items */
+    margin-bottom: 5px; /* Space between links */
+}
+
+.header-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Background color on hover */
+}
+
+nav {
+    background-color: #4CAF50; /* Background color for navigation */
+    padding: 10px; /* Padding inside the nav */
+    width: 220px; /* Fixed width for the nav */
+    position: fixed; /* Fix position on the left side */
+    top: 127px; /* Position from the top */
+    left: 0; /* Align to the left */
+    height: calc(100vh - 147px); /* Full height minus header height */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack nav items vertically */
+    justify-content: space-between; /* Space items evenly */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets from list */
+    padding: 0; /* Remove padding from list */
+    margin: 0; /* Remove margin from list */
+    flex-grow: 1; /* Allow the list to grow and take available space */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-evenly; /* Evenly space items */
+}
+
+nav ul li {
+    margin: 0; /* Remove margin from list items */
+}
+
+nav ul li a {
+    color: rgb(255, 195, 11); /* Original color for navigation links */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make the link a block element */
+    padding: 15px 10px; /* Padding for link items */
+    font-size: 25px; /* Font size for navigation links */
+    text-align: center; /* Center text in navigation links */
+    border: 2px solid rgb(255, 195, 11); /* Border around navigation links */
+    border-radius: 8px; /* Rounded corners for navigation links */
+    margin-bottom: 10px; /* Space between links */
+}
+
+nav ul li a:hover {
+    background-color: #3e8e41; /* Background color on hover */
+}
+
+/* Box around h1, p, and the characters list */
+.content-box {
+    border: 2px solid rgb(206, 0, 0); /* Border around the content box */
+    padding: 50px; /* Padding inside the content box */
+    border-radius: 10px; /* Rounded corners for the content box */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    max-width: 100%; /* Allow maximum width to be 100% */
+    margin: 20px auto; /* Center the box horizontally */
+    text-align: center; /* Center text inside the box */
+}
+
+main {
+    position: relative; /* Relative positioning for child elements */
+    width: calc(100% - 240px); /* Full width minus the fixed width of the nav */
+    margin-left: 240px; /* Align main content next to the nav */
+    height: calc(100vh - 127px); /* Full height minus header height */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    color: rgb(255, 255, 255); /* Text color in main content */
+}
+
+.characters-list {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack character items vertically */
+    align-items: flex-start; /* Align items to the start */
+    list-style-type: none; /* Remove bullets from list */
+    padding: 0; /* Remove padding from list */
+}
+
+.characters-list li {
+    margin: 20px 0; /* Space between character items */
+    font-size: 2em; /* Font size for character names */
+}
+
+.characters-list li a {
+    color: rgb(255, 195, 11); /* Link color for character names */
+    text-decoration: none; /* Remove underline from links */
+    padding: 15px; /* Padding for character links */
+    border: 2px solid rgb(206, 0, 0); /* Border around character links */
+    border-radius: 5px; /* Rounded corners for character links */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically in the link */
+    width: 100%; /* Full width for character links */
+}
+
+.characters-list li a img.character-image {
+    width: 100px; /* Fixed width for character images */
+    height: 100px; /* Fixed height for character images */
+    margin-right: 20px; /* Space between image and text */
+    border-radius: 50%; /* Make images circular */
+}
+
+.characters-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Background color on hover for character links */
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+    nav {
+        width: 100%; /* Full width for nav on smaller screens */
+        height: auto; /* Let it resize automatically */
+        position: relative; /* Stack nav above main content */
+    }
+
+    main {
+        margin-left: 0; /* Reset margin for full width on smaller screens */
+        width: 100%; /* Full width for main content */
+    }
+
+    #search-bar {
+        width: 90%; /* Adjust search bar width for smaller screens */
+    }
+}

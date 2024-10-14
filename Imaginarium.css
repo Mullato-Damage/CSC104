@@ -1,31 +1,31 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* Set default font for the entire page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Light grey background color */
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 5px;
-    background-color: #282c34;
-    color: rgb(0, 26, 255);
-    width: 100%;
-    box-sizing: border-box;
-    position: relative; /* Relative positioning for absolute child */
+    display: flex; /* Use flexbox layout for header */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 5px; /* Padding around the header */
+    background-color: #282c34; /* Dark background for header */
+    color: rgb(0, 26, 255); /* Text color in header */
+    width: 100%; /* Full width for the header */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    position: relative; /* Relative positioning for absolute child elements */
 }
 
 #business-name {
-    font-size: 24px;
-    padding: 10px; /* Reduced padding to align with search bar */
-    border: 2px solid rgb(206, 0, 0);
-    background-color: #3c4043;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    text-decoration: none; /* Remove underline for the link */
-    color: rgb(0, 26, 255); /* Ensure text color matches */
+    font-size: 24px; /* Font size for business name */
+    padding: 10px; /* Padding for business name */
+    border: 2px solid rgb(206, 0, 0); /* Red border around business name */
+    background-color: #3c4043; /* Dark background for business name */
+    border-radius: 5px; /* Rounded corners for the border */
+    margin-bottom: 10px; /* Space below the business name */
+    text-decoration: none; /* Remove underline from link */
+    color: rgb(0, 26, 255); /* Text color for business name */
 }
 
 #business-name a {
@@ -38,25 +38,25 @@ header {
 }
 
 #search-bar {
-    padding: 8px;
-    width: 500px;
-    margin: 10px auto;
-    border: 2px solid rgb(206, 0, 0);
-    border-radius: 5px;
+    padding: 8px; /* Padding for search bar */
+    width: 500px; /* Fixed width for search bar */
+    margin: 10px auto; /* Center the search bar with margin */
+    border: 2px solid rgb(206, 0, 0); /* Red border for search bar */
+    border-radius: 5px; /* Rounded corners for the border */
 }
 
 /* New CSS for the header links */
 .header-links {
-    position: absolute; /* Position absolute to the header */
+    position: absolute; /* Position absolutely within the header */
     right: 20px; /* Space from the right edge */
     top: 10px; /* Space from the top */
-    display: flex;
+    display: flex; /* Use flexbox layout */
     flex-direction: column; /* Stack links vertically */
 }
 
 .header-links a {
-    color: rgb(0, 26, 255); /* Color for the links */
-    text-decoration: none; /* Remove underline */
+    color: rgb(0, 26, 255); /* Text color for header links */
+    text-decoration: none; /* Remove underline from links */
     padding: 5px 10px; /* Padding for links */
     font-size: 18px; /* Font size for links */
     border: 2px solid rgb(206, 0, 0); /* Red border for each link */
@@ -65,29 +65,29 @@ header {
 }
 
 .header-links a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Background on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
 }
 
 nav {
-    background-color: #4CAF50;
-    padding: 10px;
-    width: 220px;
+    background-color: #4CAF50; /* Green background for navigation */
+    padding: 10px; /* Padding around nav */
+    width: 220px; /* Fixed width for navigation */
     position: fixed; /* Fixed position for constant visibility */
-    top: 127px;
-    left: 0;
-    height: calc(100vh - 147px); /* Adjust to fill the remaining height */
-    display: flex;
+    top: 127px; /* Distance from the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    height: calc(100vh - 147px); /* Fill remaining vertical space */
+    display: flex; /* Use flexbox layout */
     flex-direction: column; /* Stack items vertically */
     justify-content: space-between; /* Space the items evenly */
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
     flex-grow: 1; /* Allows nav items to grow and fill the vertical space */
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Use flexbox layout for the list */
+    flex-direction: column; /* Stack items vertically */
     justify-content: space-evenly; /* Space items evenly */
 }
 
@@ -96,40 +96,43 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(255, 195, 11);
-    text-decoration: none;
-    display: block;
-    padding: 15px 10px; /* Increase padding for a larger clickable area */
+    color: rgb(255, 195, 11); /* Text color for navigation links */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make links block-level for easier clicking */
+    padding: 15px 10px; /* Padding for a larger clickable area */
     font-size: 25px; /* Increase the font size for better readability */
     text-align: center; /* Center the text inside each nav item */
+    border: 2px solid rgb(255, 195, 11); /* Add border with the same color as the text */
+    border-radius: 8px; /* Optional: Rounded corners for the border */
+    margin-bottom: 10px; /* Space between each nav item */
 }
 
 nav ul li a:hover {
-    background-color: #3e8e41; /* Hover effect remains */
+    background-color: #3e8e41; /* Hover effect for nav items */
 }
 
 main {
-    position: relative; /* Ensure the text can be positioned over the image */
-    width: calc(100% - 240px); /* Adjust width, ensuring it doesn't collide with nav */
-    margin-left: 240px; /* Space for nav */
+    position: relative; /* Allow positioning of text over the background image */
+    width: calc(100% - 240px); /* Adjust width to account for navigation */
+    margin-left: 240px; /* Space for navigation */
     height: calc(100vh - 127px); /* Full height minus the header */
-    background-image: url('Imaginarium.jpg'); /* Set the image as the background */
+    background-image: url('Imaginarium.jpg'); /* Set background image */
     background-size: cover; /* Ensure the image covers the entire main area */
     background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
-    display: flex;
-    flex-direction: column; /* Allow vertical stacking of content */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    display: flex; /* Use flexbox layout for main content */
+    flex-direction: column; /* Stack content vertically */
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
     color: white; /* Change text color to contrast with the image */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow to text for readability */
 }
 
 main h1, main p {
     position: relative; /* Keep text flow normal */
     z-index: 1; /* Ensure text appears above the background image */
     margin: 0; /* Remove extra margins */
-    padding: 10px;
+    padding: 10px; /* Padding for text */
     text-align: center; /* Center the text */
 }
 
@@ -147,7 +150,7 @@ main p {
     nav {
         width: 100%; /* Full width on smaller screens */
         height: auto; /* Let it resize automatically */
-        position: relative; /* Stack nav above main */
+        position: relative; /* Stack nav above main content */
     }
 
     main {
