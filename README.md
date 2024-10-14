@@ -1,1 +1,7 @@
 # CSC104
+Elementus is the main page of the website where everyone will start. It has a background and links to the other pages. Imaginarium is the CSS for the main page.
+Character is linked to the main page through the characters link, and shows a list of characters that I've created, with the first being Jaded and Troja, who have their pages. Characters have their background image and CSS, CharactersList.css
+Jaded is the first character you'll see on the lists, which leads users to the character's page, representing their bio. The character is currently Jaded, and there is an image representing them. Jaded and Trojan use the Characters.css but with separate CSS within their HTML.
+Tech shows a gallery of different tech that has been created, and presented through images, videos, and gifs; within the gallery. The tech links to the character that wields it, as well as the tech being shown within the individual characters page.
+Contact presents information to contact the author/creator of the characters and stories... me.
+All CSS follow a similar style, with only a few changes, depending on the information and images being presented.
